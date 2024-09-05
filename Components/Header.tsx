@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
+import PrdikLogo from "../public/prdik-logo.png";
 
 const handleScrollToSluzby = () => {
   const heroElement = document.getElementById('sluzby');
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center space-x-2 md:space-x-4">
           <a href="#" className="flex items-center">
-            <Image src="/prdik-logo.png" width={60} height={40} alt="logo" />
+            <Image src={PrdikLogo} width={60} height={40} alt="logo" />
             <span className="text-lg font-bold">InnoSolEnergy</span>
           </a>
         </div>

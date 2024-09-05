@@ -1,5 +1,8 @@
 
-
+import PrdikLogo from "../public/prdik-logo.png";
+import FbIcon from "../public/facebook-color-svgrepo-com.svg";
+import IgIcon from "../public/instagram-1-svgrepo-com.svg";
+import WpIcon from "../public/whatsapp-svgrepo-com.svg";
 import Image from "next/image";
 
 
@@ -13,7 +16,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2 md:space-x-4">
               <a href="#" className="flex items-center">
-                <Image src="/prdik-logo.png" width={60} height={40} alt="logo" />
+                <Image src={PrdikLogo} width={60} height={40} alt="logo" />
                 <span className="text-lg font-bold">InnoSolEnergy</span>
               </a>
             </div>
@@ -36,9 +39,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex space-x-4 mt-6 lg:mt-0 list-none">
-                <li><a href="#"><Image src="/facebook-color-svgrepo-com.svg" width={28} height={28} alt="facebok" className="mb-2"/></a></li>
-                <li><a href="#"><Image src="/instagram-1-svgrepo-com.svg" width={30} height={30} alt="instagram" className="mb-2"/></a></li>
-                <li><a href="#"><Image src="/whatsapp-svgrepo-com.svg" width={30} height={30} alt="whatasap"/></a></li>
+                <li><a href="#"><Image src={FbIcon} width={28} height={28} alt="facebok" className="mb-2"/></a></li>
+                <li><a href="#"><Image src={IgIcon} width={30} height={30} alt="instagram" className="mb-2"/></a></li>
+                <li><a href="#"><Image src={WpIcon} width={30} height={30} alt="whatasap"/></a></li>
           </div>
 
         </div>

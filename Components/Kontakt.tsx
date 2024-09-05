@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Avatar from "../public/tvrdik_michal.jpg"
 
 const Kontakt = () => {
   return (
@@ -9,7 +10,7 @@ const Kontakt = () => {
           {/* Obrázek */}
           <div className="w-48 h-48 mb-4">
             <Image
-              src="/tvrdik_michal.jpg"
+              src={Avatar}
               alt="Kontakt osoba"
               className="rounded-full object-cover w-full h-full"
               width={192}
@@ -86,7 +87,7 @@ const Kontakt = () => {
 
       {/* Nová část - Kde působíme */}
       <div className="w-full mt-10 bg-slate-100 text-black py-10 px-4 md:px-20 text-center rounded-lg shadow-lg shadow-cyan-950">
-        <h2 className="text-2xl font-bold mb-6">Kde působíme?</h2>
+        <h2 className="text-4xl font-bold mb-6">Kde působíme?</h2>
         <p className="mb-6">Výpis měst a jejich okolí, které máme pod palcem.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

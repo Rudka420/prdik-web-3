@@ -1,5 +1,6 @@
 "use client";
 
+import HeroImg from "../public/hero-el-img.jpg";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -28,7 +29,7 @@ const Hero = () => {
     <div className="mt-12 relative w-full h-[550px]">
       {/* Background Image */}
       <Image 
-        src="/hero-el-img.jpg" 
+        src={HeroImg} 
         layout="fill" 
         objectFit="cover" 
         alt="electric work" 
