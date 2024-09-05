@@ -12,6 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        pulseRed: {
+          '0%, 100%': { backgroundColor: 'transparent', color: '#0e7490' }, // transparent a původní barva textu
+          '50%': { backgroundColor: '#f87171', color: '#ffffff' }, // Pulzující červená a bílá barva textu
+        },
+      },
+      animation: {
+        'pulse-red': 'pulseRed 2.5s ease-in-out infinite', // Definice animace
+      },
     },
   },
   plugins: [],
