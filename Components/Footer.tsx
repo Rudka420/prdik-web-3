@@ -36,9 +36,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex space-x-4 mt-6 lg:mt-0 list-none">
-                <li><a href="#"><Image src="facebook-color-svgrepo-com.svg" width={28} height={28} alt="facebok" className="mb-2"/></a></li>
-                <li><a href="#"><Image src="instagram-1-svgrepo-com.svg" width={30} height={30} alt="instagram" className="mb-2"/></a></li>
-                <li><a href="#"><Image src="whatsapp-svgrepo-com.svg" width={30} height={30} alt="whatasap"/></a></li>
+                <li><a href="#"><Image src="/facebook-color-svgrepo-com.svg" width={28} height={28} alt="facebok" className="mb-2"/></a></li>
+                <li><a href="#"><Image src="/instagram-1-svgrepo-com.svg" width={30} height={30} alt="instagram" className="mb-2"/></a></li>
+                <li><a href="#"><Image src="/whatsapp-svgrepo-com.svg" width={30} height={30} alt="whatasap"/></a></li>
           </div>
 
         </div>

@@ -2,11 +2,9 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './src/**/*.{js,ts,jsx,tsx}',
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",      // Pokud používáte složku app, tohle by mělo stačit
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", // Pokud používáte složku components
+    "./styles/**/*.css",                   // Pokud máte vlastní CSS soubory
   ],
   theme: {
     extend: {
@@ -16,15 +14,16 @@ const config: Config = {
       },
       keyframes: {
         pulseRed: {
-          '0%, 100%': { backgroundColor: 'transparent', color: '#0e7490' }, // transparent a původní barva textu
-          '50%': { backgroundColor: '#f87171', color: '#ffffff' }, // Pulzující červená a bílá barva textu
+          '0%, 100%': { backgroundColor: 'transparent', color: '#0e7490' },
+          '50%': { backgroundColor: '#f87171', color: '#ffffff' },
         },
       },
       animation: {
-        'pulse-red': 'pulseRed 2.5s ease-in-out infinite', // Definice animace
+        'pulse-red': 'pulseRed 2.5s ease-in-out infinite',
       },
     },
   },
   plugins: [],
 };
+
 export default config;
