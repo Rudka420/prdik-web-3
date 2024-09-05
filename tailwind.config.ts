@@ -6,7 +6,6 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx}',   // Pokud používáš složku pages
     './styles/**/*.css',               // Zahrni CSS soubory
-    './**/*.{js,ts,jsx,tsx,mdx}'                           // Pokud máte vlastní CSS soubory
   ],
   theme: {
     extend: {
