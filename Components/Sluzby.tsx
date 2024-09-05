@@ -1,6 +1,5 @@
-import Silnoproud from "../public/silnoproud1.jpg";
-import Slaboproud from "../public/slaboproud2.jpg";
-import StavebPrace from "../public/staveb-prace.jpg";
+
+
 import Image from "next/image";
 
 const Sluzby = () => {
@@ -25,7 +24,7 @@ const Sluzby = () => {
         <div className="relative flex flex-col mt-6 text-gray-700 bg-white w-96">
             <div
                 className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-cyan-950">
-                <Image src={Silnoproud} alt="card-image"/>
+                <img src="/silnoproud1.jpg" alt="card-image"/>
             </div>
             <div className="p-6 text-left">
                 <h5 className="mb-4 text-4xl font-semibold text-cyan-950 text-center">
@@ -62,7 +61,7 @@ const Sluzby = () => {
         <div className="relative flex flex-col mt-6 text-gray-700 bg-white w-96">
             <div
                 className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-cyan-950">
-                <Image src={Slaboproud} alt="card-image"/>
+                <img src="/slaboproud2.jpg" alt="card-image"/>
             </div>
             <div className="p-6 text-left">
                 <h5 className="mb-4 text-4xl font-semibold text-cyan-950 text-center">
@@ -99,7 +98,7 @@ const Sluzby = () => {
         <div className="relative flex flex-col mt-6 text-gray-700 bg-white w-96">
             <div
                 className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-cyan-950">
-                <Image src={StavebPrace} alt="card-image"/>
+                <img src="/staveb-prace.jpg" alt="card-image"/>
             </div>
             <div className="p-6 text-left">
                 <h5 className="mb-4 text-4xl font-semibold text-cyan-950 text-center">

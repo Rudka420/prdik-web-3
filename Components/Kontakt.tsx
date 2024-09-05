@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Avatar from "../public/tvrdik_michal.jpg"
+
 
 const Kontakt = () => {
   return (
@@ -10,7 +10,7 @@ const Kontakt = () => {
           {/* Obrázek */}
           <div className="w-48 h-48 mb-4">
             <Image
-              src={Avatar}
+              src="/tvrdik_michal.jpg"
               alt="Kontakt osoba"
               className="rounded-full object-cover w-full h-full"
               width={192}

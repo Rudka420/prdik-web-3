@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import Delnik from "../public/delnik1.jpg"
+
 
 const ProcMy = () => {
   return(
@@ -11,7 +11,7 @@ const ProcMy = () => {
       {/* Image Container */}
       <div className="flex-1">
         <Image
-          src={Delnik}
+          src="/delnik1.jpg"
           alt="Dlaczego my?"
           width={700}
           height={700}
