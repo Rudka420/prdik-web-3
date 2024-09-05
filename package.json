@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tailwind:build": "npx tailwindcss -i styles/globals.css -o styles/output.css --content './app/**/*.{js,ts,jsx,tsx,mdx},./components/**/*.{js,ts,jsx,tsx,mdx}'"
+    "tailwind:build": "ls -la ./styles && npx tailwindcss -i styles/globals.css -o styles/output.css --content './app/**/*.{js,ts,jsx,tsx,mdx},./components/**/*.{js,ts,jsx,tsx,mdx}'"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
