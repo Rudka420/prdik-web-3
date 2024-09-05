@@ -6,7 +6,6 @@ import Postup from '@/Components/Postup';
 import Recenze from '@/Components/Recenze';
 import Kontakt from '@/Components/Kontakt';
 import Footer from '@/Components/Footer';
-import '../styles/globals.css';
 import 'boxicons/css/boxicons.min.css'
 
 
