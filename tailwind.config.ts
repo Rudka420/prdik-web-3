@@ -2,10 +2,10 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx}',   // Pokud používáš složku pages
-    './styles/**/*.css',               // Zahrni CSS soubory
+    './app/**/*.{js,ts,jsx,tsx,mdx}',     // Soubory v app složce
+    './components/**/*.{js,ts,jsx,tsx,mdx}', // Komponenty
+    './pages/**/*.{js,ts,jsx,tsx}',       // Pokud používáš pages
+    './styles/**/*.css',                  // CSS soubory
   ],
   theme: {
     extend: {
