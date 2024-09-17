@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tailwind:build": "ls -la ./styles && npx tailwindcss -i styles/globals.css -o styles/output.css --content './app/**/*.{js,ts,jsx,tsx,mdx},./components/**/*.{js,ts,jsx,tsx,mdx}'"
+    "tailwind:build": "ls -la ./styles && npx tailwindcss -i styles/globals.css -o styles/output.css --content './app/**/*.{js,ts,jsx,tsx,mdx},./components/**/*.{js,ts,jsx,tsx,mdx}'",
+    "export": "next build && next export"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -15,12 +16,14 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.8",
     "next": "14.2.8",
+    "nodemailer": "^6.9.15",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.1.12"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
+    "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",

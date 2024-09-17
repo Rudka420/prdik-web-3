@@ -2,16 +2,21 @@
 
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+
 
 const Hero = () => {
   // Slova, která se budou měnit
-  const words = ["Elektro - instalace🔌", "Fotovoltaiku🌞", "Stavební práce🚧"];
+
+  const words = [
+    <span key="elektro">Elektro - instalace🔌</span>, 
+    <span key="fotovoltaika">Fotovoltaiku ☀️</span>,
+    <span key="stavebni-prace">Stavební práce 🚧</span>
+  ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [fade, setFade] = useState(true); // Stav pro animaci
 
   useEffect(() => {
-    // Funkce pro změnu slova každé 2 sekundy
+    // Funkce pro změnu slova 
     const intervalId = setInterval(() => {
       setFade(false); // Začneme fade-out
       setTimeout(() => {
@@ -26,14 +31,12 @@ const Hero = () => {
   },);
 
   return (
-    <div className="mt-12 relative w-full h-[550px]">
+    <div className="mt-12 relative w-full h-[600px]">
       {/* Background Image */}
-      <Image 
+      <img 
         src="/hero-el-img.jpg"
-        layout="fill" 
-        objectFit="cover" 
         alt="electric work" 
-        className="opacity-25" 
+        className="w-full h-full object-cover opacity-25" 
       />
 
       {/* Color Overlay */}
@@ -43,7 +46,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex justify-center items-center text-gray-900 px-4 md:px-10 z-10">
         {/* Left Side - Text Content */}
         <div className="flex flex-col justify-center items-center text-center">
-          <h1 className="md:text-6xl text-5xl font-bold my-4 text-center">
+          <h1 className="md:text-6xl text-[50px] font-bold my-4 text-center">
             Perfektní volba pro <br />
             <div
               className={`inline-block px-2 py-4 text-cyan-950 transition-opacity duration-550 ${fade ? 'opacity-100' : 'opacity-0'}`}

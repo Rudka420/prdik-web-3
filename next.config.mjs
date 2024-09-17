@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['prdik-web-2.vercel.app'], // nahraď názvem tvého projektu na Vercelu
-    },
+  output: 'export', // Přidá export jako statický výstup
   };
   
   export default nextConfig;

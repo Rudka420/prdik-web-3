@@ -1,7 +1,5 @@
 
 
-import Image from "next/image";
-
 
 const Footer = () => {
   return (
@@ -13,7 +11,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2 md:space-x-4">
               <a href="#" className="flex items-center">
-                <Image src="/prdik-logo.png" width={60} height={40} alt="logo" />
+                <img src="/prdik-logo.png" width={60} height={40} alt="logo" />
                 <span className="text-lg font-bold">InnoSolEnergy</span>
               </a>
             </div>
@@ -23,7 +21,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Střední část - Odkazy */}
+          {/* Střední část  */}
           <div className="flex flex-col lg:flex-row text-center lg:text-left space-y-4 lg:space-y-0 lg:space-x-16">
             
             <div>
@@ -35,10 +33,16 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+
+          {/* Social ikony  */}
           <div className="flex space-x-4 mt-6 lg:mt-0 list-none">
-                <li><a href="#"><Image src="/facebook-color-svgrepo-com.svg" width={28} height={28} alt="facebok" className="mb-2"/></a></li>
-                <li><a href="#"><Image src="/instagram-1-svgrepo-com.svg" width={30} height={30} alt="instagram" className="mb-2"/></a></li>
-                <li><a href="#"><Image src="/whatsapp-svgrepo-com.svg" width={30} height={30} alt="whatasap"/></a></li>
+                <li><a href="https://www.facebook.com/people/Innosolenergy/61565340720029/"><img src="/facebook-color-svgrepo-com.svg" width={28} height={28} alt="facebok" className="mb-2"/></a></li>
+                <li><a href="#"><img src="/instagram-1-svgrepo-com.svg" width={30} height={30} alt="instagram" className="mb-2"/></a></li>
+                <li>
+                <a href="https://wa.me/42072919585?text=Dobrý den, mám zájem o vaše služby." target="_blank" rel="noopener noreferrer">
+                  <img src="/whatsapp-svgrepo-com.svg" width={30} height={30} alt="whatsapp" />
+                </a>
+                </li>
           </div>
 
         </div>

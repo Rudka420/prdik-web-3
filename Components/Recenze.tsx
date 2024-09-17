@@ -2,7 +2,7 @@
 
 import 'swiper/css';
 import 'swiper/css/pagination'; 
-import Image from 'next/image';
+
 
 
 // import Swiper komponent
@@ -43,7 +43,6 @@ const reviews = [
     author: "@SVJPalackeho33",
     verified: true,
     rating: 5,
-    image: "/recenze5.webp",
   }
 ];
 
@@ -91,7 +90,7 @@ const Recenze = () => {
               {review.verified && <span className="text-blue-500 ml-1"><i className='bx bxs-badge-check'></i></span>}
             </p>
             <div>
-              {review.image && <Image src={review.image} alt="img recenze" width={400} height={400} className="mt-3"/>}
+              {review.image && <img src={review.image} alt="img recenze" width={400} height={400} className="mt-3"/>}
             </div>
           </div>
 

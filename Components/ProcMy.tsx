@@ -1,4 +1,3 @@
-import Image from "next/image"
 
 
 
@@ -10,9 +9,9 @@ const ProcMy = () => {
     <div className="flex flex-col md:flex-row items-center md:space-x-8 ">
       {/* Image Container */}
       <div className="flex-1">
-        <Image
+        <img
           src="/delnik1.jpg"
-          alt="Dlaczego my?"
+          alt="proc myy"
           width={700}
           height={700}
         />
